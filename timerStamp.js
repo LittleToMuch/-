@@ -1,0 +1,6 @@
+let a = new Date()
+console.log(a)
+let b = new Date(a).getTime()
+console.log(b)
+let c = new Date('2020-03-08T10:51:36.539Z').getTime()
+console.log(c)

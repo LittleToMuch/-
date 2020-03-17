@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" class="a">first</a>
+    <a href="#" class="a">second</a>
+    <a href="#" class="a">third</a>
+
+    <script>
+        let hrefs = document.querySelectorAll('.a')
+        console.log(hrefs)
+        hrefs.forEach((item, index) => {
+            item.onmouseenter = function(e) {
+                console.log(e.target.className);
+                
+            }
+        })
+    </script>
+</body>
+</html>
